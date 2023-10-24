@@ -15,5 +15,5 @@ After these steps we will have the backend available in our local environment on
 
 ## Documentation
 
-We can acces directly to the API documentation provided by Django rest framework by the browser http://localhost:8000
-We will the API root and we will can surfing betwen the link, listing , filtering and creating Elements
+We can directly access the API documentation provided by Django rest framework through the browser http://localhost:8000
+We will open the root of the API and we will be able to navigate between the links, list, filter and create elements.
