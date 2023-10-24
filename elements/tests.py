@@ -11,6 +11,7 @@ class ElementsViewSetTest(TestCase):
     def setUp(self):
         self.client = APIClient()
         self.status = 60
+        self.idBulk = 1
         self.name = "Element Test"
         self.wrong_status = "text"
     
@@ -30,6 +31,8 @@ class ElementsViewSetTest(TestCase):
     
     def test_create_ok(self):
         response = self.client.post(
-            f'/elements/', dict(status=self.status, name=self.name),format="json"
+            f'/elements/', 
+            dict(status=self.status, name=self.name, idBulk=self.idBulk),
+            format="json"
         )
         self.assertEquals(status.HTTP_201_CREATED, response.status_code)
